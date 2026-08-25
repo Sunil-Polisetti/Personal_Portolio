@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Polisetti Sunil Kumar - Resume</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    
+    body {
+      background: #ffffff;
+      color: #1e293b;
+      padding: 30px 40px;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    
+    @page {
+      size: A4;
+      margin: 12mm 15mm;
+    }
+    
+    /* Header */
+    .header {
+      text-align: center;
+      border-b: 2px solid #2563eb;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+    }
+    
+    .name {
+      font-size: 24px;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+      margin-bottom: 2px;
+      text-transform: uppercase;
+    }
+    
+    .title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #2563eb;
+      margin-bottom: 6px;
+    }
+    
+    .contact-info {
+      font-size: 11px;
+      color: #475569;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+    
+    .contact-info a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    /* Section Formatting */
+    .section {
+      margin-bottom: 14px;
+    }
+    
+    .section-title {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #1e293b;
+      border-bottom: 1.5px solid #cbd5e1;
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: #2563eb;
+      border-radius: 2px;
+      margin-right: 6px;
+    }
+    
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 16px;
+    }
+    
+    .skill-item {
+      font-size: 11.5px;
+    }
+    
+    .skill-item strong {
+      color: #0f172a;
+    }
+    
+    /* Projects */
+    .project-card {
+      margin-bottom: 9px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-left: 3px solid #2563eb;
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
+    
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+    
+    .project-name {
+      font-size: 12px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    
+    .project-tech {
+      font-size: 10.5px;
+      font-weight: 600;
+      color: #475569;
+      background: #e2e8f0;
+      padding: 1px 6px;
+      border-radius: 3px;
+    }
+    
+    .project-desc {
+      font-size: 11px;
+      color: #334155;
+      margin-bottom: 4px;
+    }
+    
+    .project-links {
+      font-size: 10.5px;
+      display: flex;
+      gap: 12px;
+    }
+    
+    .project-links a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    /* Experience & Education */
+    .exp-item, .edu-item {
+      margin-bottom: 8px;
+    }
+    
+    .exp-header, .edu-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+      font-size: 12px;
+      color: #0f172a;
+    }
+    
+    .exp-sub {
+      font-size: 11px;
+      color: #2563eb;
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+    
+    .bullet-list {
+      padding-left: 16px;
+      font-size: 11px;
+      color: #334155;
+    }
+    
+    .bullet-list li {
+      margin-bottom: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1 class="name">Polisetti Sunil Kumar</h1>
+    <p class="title">Full Stack Developer | Java & Web Specialist</p>
+    <div class="contact-info">
+      <span>📞 +91 7075042503</span>
+      <span>✉️ <a href="mailto:Polisettisunil335@gmail.com">Polisettisunil335@gmail.com</a></span>
+      <span>📍 Kadapa, AP, India</span>
+      <span>🌐 <a href="https://sunil-polisetti.github.io/Personal_Portolio/">Portfolio Site</a></span>
+      <span>💼 <a href="https://www.linkedin.com/in/sunil-kumar-polisetti">LinkedIn</a></span>
+      <span>💻 <a href="https://github.com/Sunil-Polisetti">GitHub</a></span>
+    </div>
+  </div>
+
+  <!-- TECHNICAL SKILLS -->
+  <div class="section">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item"><strong>Programming:</strong> Java, JavaScript (ES6+), Python, SQL</div>
+      <div class="skill-item"><strong>Frontend:</strong> HTML5, CSS3, React.js, Angular, JavaScript</div>
+      <div class="skill-item"><strong>Backend:</strong> Spring Boot, Hibernate, JDBC, Node.js, Express, REST APIs</div>
+      <div class="skill-item"><strong>Databases & Tools:</strong> MySQL, MongoDB, Git, GitHub, Postman, VS Code</div>
+      <div class="skill-item"><strong>Core Engineering:</strong> OOPs, Data Structures & Algorithms, DBMS</div>
+    </div>
+  </div>
+
+  <!-- FEATURED PROJECTS -->
+  <div class="section">
+    <h2 class="section-title">Key Live Projects</h2>
+
+    <!-- Project 1: Angular Shopping Cart -->
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-name">1. Angular Shopping Cart</span>
+        <span class="project-tech">Angular • TypeScript • HTML/CSS • JS</span>
+      </div>
+      <p class="project-desc">Dynamic e-commerce shopping cart web application featuring product listings, reactive cart state management, quantity updates, dynamic pricing, and routing.</p>
+      <div class="project-links">
+        <span>🚀 Live Demo: <a href="https://angular-shopping-cart-seven.vercel.app/">angular-shopping-cart-seven.vercel.app</a></span>
+        <span>💻 GitHub: <a href="https://github.com/Sunil-Polisetti/Angular_Shopping_Cart">Sunil-Polisetti/Angular_Shopping_Cart</a></span>
+      </div>
+    </div>
+
+    <!-- Project 2: E-Bucket React Application -->
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-name">2. E-Bucket React Application</span>
+        <span class="project-tech">React.js • JavaScript • HTML5 • CSS3</span>
+      </div>
+      <p class="project-desc">Interactive online shopping bucket application developed using React Hooks, component state management, modular architecture, and client-side catalog filters.</p>
+      <div class="project-links">
+        <span>🚀 Live Demo: <a href="https://ebucket-project-using-react.vercel.app/">ebucket-project-using-react.vercel.app</a></span>
+        <span>💻 GitHub: <a href="https://github.com/Sunil-Polisetti/Ebucket-Project-Using-React">Sunil-Polisetti/Ebucket-Project-Using-React</a></span>
+      </div>
+    </div>
+
+    <!-- Project 3: Banking Application -->
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-name">3. Banking Application</span>
+        <span class="project-tech">HTML5 • CSS3 • JavaScript • Node.js • MongoDB</span>
+      </div>
+      <p class="project-desc">Full-stack banking web portal for managing customer accounts, deposit/withdrawal transactions, balance enquiry, input validation, and secure MongoDB data storage.</p>
+      <div class="project-links">
+        <span>🚀 Live Demo: <a href="https://banking-application-rose.vercel.app/">banking-application-rose.vercel.app</a></span>
+        <span>💻 GitHub: <a href="https://github.com/Sunil-Polisetti/Banking-Application">Sunil-Polisetti/Banking-Application</a></span>
+      </div>
+    </div>
+
+    <!-- Project 4: Travel Guide Project -->
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-name">4. Travel Guide Project</span>
+        <span class="project-tech">HTML5 • CSS3 • JavaScript</span>
+      </div>
+      <p class="project-desc">Responsive travel exploration web application featuring destination catalogs, tour itinerary cards, interactive details, and modern mobile-first UI layout.</p>
+      <div class="project-links">
+        <span>🚀 Live Demo: <a href="https://sunil-polisetti.github.io/Travel-Guide-Project/">sunil-polisetti.github.io/Travel-Guide-Project</a></span>
+        <span>💻 GitHub: <a href="https://github.com/Sunil-Polisetti/Travel-Guide-Project">Sunil-Polisetti/Travel-Guide-Project</a></span>
+      </div>
+    </div>
+
+    <!-- Project 5: Java Backend & Data Structures Repository -->
+    <div class="project-card">
+      <div class="project-header">
+        <span class="project-name">5. Java Backend & Data Structures Repository</span>
+        <span class="project-tech">Java • Spring Boot • JDBC • MySQL • OOPs</span>
+      </div>
+      <p class="project-desc">Comprehensive Java repository demonstrating Object-Oriented design principles (Inheritance, Polymorphism, Abstraction), Data Structures implementation, and MySQL database connectivity.</p>
+      <div class="project-links">
+        <span>💻 GitHub Repository: <a href="https://github.com/Sunil-Polisetti/java-project">Sunil-Polisetti/java-project</a></span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- WORK EXPERIENCE -->
+  <div class="section">
+    <h2 class="section-title">Work Experience</h2>
+    <div class="exp-item">
+      <div class="exp-header">
+        <span>TAP Academy</span>
+        <span>Feb 2026 – Aug 2026</span>
+      </div>
+      <div class="exp-sub">Full Stack Developer Intern</div>
+      <ul class="bullet-list">
+        <li>Developed and deployed Full Stack Applications using Java, Spring Boot, MySQL, React, JavaScript, and REST APIs.</li>
+        <li>Implemented backend persistence layer using Spring Boot, Hibernate, and JDBC for database connectivity.</li>
+        <li>Built secure authentication and optimized REST API endpoints for enhanced application performance and scalable modular architecture.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <h2 class="section-title">Education</h2>
+    <div class="edu-item">
+      <div class="edu-header">
+        <span>Sri Venkateswara College Of Engineering and Technology (Autonomous)</span>
+        <span>2023 – 2026</span>
+      </div>
+      <div class="exp-sub" style="color: #475569;">Bachelor of Technology (B.Tech) in Computer Science Engineering • CGPA: 7.99 / 10</div>
+      <div style="font-size: 10.5px; color: #64748b;">Kadapa, Andhra Pradesh, India</div>
+    </div>
+  </div>
+
+</body>
+</html>
